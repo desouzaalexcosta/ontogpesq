@@ -6,176 +6,176 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://purl.org/ontogpesq> rdf:type owl:Ontology;
-    owl:imports gufo:.
+    owl:imports <http://purl.org/nemo/gufo>.
 :InstituicaoDeEnsinoSuperior rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "InstituicaoDeEnsinoSuperior"@en.
+    rdfs:label "InstituicaoDeEnsinoSuperior"@pt-br.
 :ProgramaPosGraduacao rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "ProgramaPosGraduacao"@en.
+    rdfs:label "ProgramaPosGraduacao"@pt-br.
 :UnidadeOrganizacional rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "UnidadeOrganizacional"@en.
+    rdfs:label "UnidadeOrganizacional"@pt-br.
 :VinculoInstitucional rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "VinculoInstitucional"@en.
+    rdfs:label "VinculoInstitucional"@pt-br.
 :Pessoa rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "Pessoa"@en.
+    rdfs:label "Pessoa"@pt-br.
 :DiscentePosGraduacao rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "DiscentePosGraduacao"@en.
+    rdfs:label "DiscentePosGraduacao"@pt-br.
 :Curso rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "Curso"@en.
+    rdfs:label "Curso"@pt-br.
 :Matricula rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "Matricula"@en.
+    rdfs:label "Matricula"@pt-br.
 :Credenciamento rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "Credenciamento"@en.
+    rdfs:label "Credenciamento"@pt-br.
 :Organizacao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "Organizacao"@en.
+    rdfs:label "Organizacao"@pt-br.
 :Egresso rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Egresso"@en.
+    rdfs:label "Egresso"@pt-br.
 :Orientacao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "Orientacao"@en.
+    rdfs:label "Orientacao"@pt-br.
 :DocentePosGraduacao rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "DocentePosGraduacao"@en.
+    rdfs:label "DocentePosGraduacao"@pt-br.
 :LinhaDePesquisa rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "LinhaDePesquisa"@en.
+    rdfs:label "LinhaDePesquisa"@pt-br.
 :AreaDeConcentracao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "AreaDeConcentracao"@en.
+    rdfs:label "AreaDeConcentracao"@pt-br.
 :Titulacao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "Titulacao"@en.
+    rdfs:label "Titulacao"@pt-br.
 :ProducaoAcademica rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "ProducaoAcademica"@en.
+    rdfs:label "ProducaoAcademica"@pt-br.
 :Autoria rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "Autoria"@en.
+    rdfs:label "Autoria"@pt-br.
 :ArtigoDePeriodico rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "ArtigoDePeriodico"@en.
+    rdfs:label "ArtigoDePeriodico"@pt-br.
 :TeseDoutorado rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "TeseDoutorado"@en.
+    rdfs:label "TeseDoutorado"@pt-br.
 :DissertacaoMestrado rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "DissertacaoMestrado"@en.
+    rdfs:label "DissertacaoMestrado"@pt-br.
 :TrabalhoEmEvento rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "TrabalhoEmEvento"@en.
+    rdfs:label "TrabalhoEmEvento"@pt-br.
 :Livro rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Livro"@en.
+    rdfs:label "Livro"@pt-br.
 :Patente rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Patente"@en.
+    rdfs:label "Patente"@pt-br.
 :Software rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Software"@en.
+    rdfs:label "Software"@pt-br.
 :Autor rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Autor"@en.
+    rdfs:label "Autor"@pt-br.
 :ProducaoBibliografica rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "ProducaoBibliografica"@en.
+    rdfs:label "ProducaoBibliografica"@pt-br.
 :Periodico rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "Periodico"@en.
+    rdfs:label "Periodico"@pt-br.
 :ClassificacaoQualis rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "ClassificacaoQualis"@en.
+    rdfs:label "ClassificacaoQualis"@pt-br.
 :TrabalhoConclusaoCurso rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "TrabalhoConclusaoCurso"@en.
+    rdfs:label "TrabalhoConclusaoCurso"@pt-br.
 :ProdutoTecnicoTecnologico rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "ProdutoTecnicoTecnologico"@en.
+    rdfs:label "ProdutoTecnicoTecnologico"@pt-br.
 :ProducaoArtistica rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "ProducaoArtistica"@en.
+    rdfs:label "ProducaoArtistica"@pt-br.
 :Musica rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Musica"@en.
+    rdfs:label "Musica"@pt-br.
 :ArtesVisuais rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "ArtesVisuais"@en.
+    rdfs:label "ArtesVisuais"@pt-br.
 :AreaAvaliacao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "AreaAvaliacao"@en.
+    rdfs:label "AreaAvaliacao"@pt-br.
 :financiadoPor rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "financiadoPor"@en.
+    rdfs:label "financiadoPor"@pt-br.
 :OrganizacaoFinanciadora rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "OrganizacaoFinanciadora"@en.
+    rdfs:label "OrganizacaoFinanciadora"@pt-br.
 :DocumentoPublico rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "DocumentoPublico"@en.
+    rdfs:label "DocumentoPublico"@pt-br.
 :Custeio rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Custeio"@en.
+    rdfs:label "Custeio"@pt-br.
 :Capital rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Capital"@en.
+    rdfs:label "Capital"@pt-br.
 :DiscenteBolsista rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "DiscenteBolsista"@en.
+    rdfs:label "DiscenteBolsista"@pt-br.
 :DocenteBolsista rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "DocenteBolsista"@en.
+    rdfs:label "DocenteBolsista"@pt-br.
 :Bolsa rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "Bolsa"@en.
+    rdfs:label "Bolsa"@pt-br.
 :BolsaMestrado rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "BolsaMestrado"@en.
+    rdfs:label "BolsaMestrado"@pt-br.
 :PesquisadorBolsista rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "PesquisadorBolsista"@en.
+    rdfs:label "PesquisadorBolsista"@pt-br.
 :BolsaDoutorado rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "BolsaDoutorado"@en.
+    rdfs:label "BolsaDoutorado"@pt-br.
 :BolsaPesquisador rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "BolsaPesquisador"@en.
+    rdfs:label "BolsaPesquisador"@pt-br.
 :Bolsista rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "Bolsista"@en.
+    rdfs:label "Bolsista"@pt-br.
 :ProjetoDePesquisa rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "ProjetoDePesquisa"@en.
+    rdfs:label "ProjetoDePesquisa"@pt-br.
 :participaDe rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "participaDe"@en.
+    rdfs:label "participaDe"@pt-br.
 :Utilizacao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "Utilizacao"@en.
+    rdfs:label "Utilizacao"@pt-br.
 :Infraestrutura rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "Infraestrutura"@en.
+    rdfs:label "Infraestrutura"@pt-br.
 :Laboratorio rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Laboratorio"@en.
+    rdfs:label "Laboratorio"@pt-br.
 :Equipamento rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Equipamento"@en.
+    rdfs:label "Equipamento"@pt-br.
 :ProjetoPlanejado rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
-    rdfs:label "ProjetoPlanejado"@en.
+    rdfs:label "ProjetoPlanejado"@pt-br.
 :ProjetoAtivo rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
-    rdfs:label "ProjetoAtivo"@en.
+    rdfs:label "ProjetoAtivo"@pt-br.
 :ProjetoConcluido rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
-    rdfs:label "ProjetoConcluido"@en.
+    rdfs:label "ProjetoConcluido"@pt-br.
 :ProjetoCancelado rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
-    rdfs:label "ProjetoCancelado"@en.
+    rdfs:label "ProjetoCancelado"@pt-br.
 :ParticipanteProjeto rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "ParticipanteProjeto"@en.
+    rdfs:label "ParticipanteProjeto"@pt-br.
 :CoordenadorProjeto rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "CoordenadorProjeto"@en.
+    rdfs:label "CoordenadorProjeto"@pt-br.
 :PesquisadorProjeto rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "PesquisadorProjeto"@en.
+    rdfs:label "PesquisadorProjeto"@pt-br.
 :EstudanteProjeto rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "EstudanteProjeto"@en.
+    rdfs:label "EstudanteProjeto"@pt-br.
 :TecnicoProjeto rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "TecnicoProjeto"@en.
+    rdfs:label "TecnicoProjeto"@pt-br.
 :MetaInstitucional rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
-    rdfs:label "MetaInstitucional"@en.
+    rdfs:label "MetaInstitucional"@pt-br.
 :MetaSocioeconomica rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "MetaSocioeconomica"@en.
+    rdfs:label "MetaSocioeconomica"@pt-br.
 :ObjetivoPoliticaPublica rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
-    rdfs:label "ObjetivoPoliticaPublica"@en.
+    rdfs:label "ObjetivoPoliticaPublica"@pt-br.
 :ObjetivoDesenvolvimentoSustentavel rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
-    rdfs:label "ObjetivoDesenvolvimentoSustentavel"@en.
+    rdfs:label "ObjetivoDesenvolvimentoSustentavel"@pt-br.
 :AlinhamentoMeta rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "AlinhamentoMeta"@en.
+    rdfs:label "AlinhamentoMeta"@pt-br.
 :AlvoDeAlinhamento rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "AlvoDeAlinhamento"@en.
+    rdfs:label "AlvoDeAlinhamento"@pt-br.
 :AlvoProjeto rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "AlvoProjeto"@en.
+    rdfs:label "AlvoProjeto"@pt-br.
 :AlvoProducao rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "AlvoProducao"@en.
+    rdfs:label "AlvoProducao"@pt-br.
 :ProgramaPosGraduacao rdfs:subClassOf :UnidadeOrganizacional.
 :InstituicaoDeEnsinoSuperior rdfs:subClassOf :Organizacao.
 :DiscentePosGraduacao rdfs:subClassOf :Pessoa.
@@ -255,282 +255,282 @@
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "nomePrograma"@en.
+    rdfs:label "nomePrograma"@pt-br.
 :siglaPrograma rdfs:domain :ProgramaPosGraduacao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "siglaPrograma"@en.
+    rdfs:label "siglaPrograma"@pt-br.
 :codigoCAPES rdfs:domain :ProgramaPosGraduacao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "codigoCAPES"@en.
+    rdfs:label "codigoCAPES"@pt-br.
 :conceitoPrograma rdfs:domain :ProgramaPosGraduacao;
-    rdfs:range :char;
+    rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "conceitoPrograma"@en.
+    rdfs:label "conceitoPrograma"@pt-br.
 :nivelPrograma rdfs:domain :ProgramaPosGraduacao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "nivelPrograma"@en.
+    rdfs:label "nivelPrograma"@pt-br.
 :nomeLinha rdfs:domain :LinhaDePesquisa;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "nomeLinha"@en.
+    rdfs:label "nomeLinha"@pt-br.
 :descricaoLinha rdfs:domain :LinhaDePesquisa;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "descricaoLinha"@en.
+    rdfs:label "descricaoLinha"@pt-br.
 :nomeArea_1 rdfs:domain :AreaDeConcentracao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "nomeArea"@en.
+    rdfs:label "nomeArea"@pt-br.
 :descricaoArea rdfs:domain :AreaDeConcentracao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "descricaoArea"@en.
+    rdfs:label "descricaoArea"@pt-br.
 :anoConclusaoCurso rdfs:domain :Titulacao;
     rdfs:range xsd:int;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "anoConclusaoCurso"@en.
+    rdfs:label "anoConclusaoCurso"@pt-br.
 :tituloObtido rdfs:domain :Titulacao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "tituloObtido"@en.
+    rdfs:label "tituloObtido"@pt-br.
 :tituloProducao rdfs:domain :ProducaoAcademica;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "tituloProducao"@en.
+    rdfs:label "tituloProducao"@pt-br.
 :anoProducao rdfs:domain :ProducaoAcademica;
     rdfs:range xsd:int;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "anoProducao"@en.
+    rdfs:label "anoProducao"@pt-br.
 :doiProducao rdfs:domain :ProducaoAcademica;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "doiProducao"@en.
+    rdfs:label "doiProducao"@pt-br.
 :OrdemAutoria rdfs:domain :Autoria;
     rdfs:range xsd:int;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "OrdemAutoria"@en.
+    rdfs:label "OrdemAutoria"@pt-br.
 :tituloPeriodico rdfs:domain :Periodico;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "tituloPeriodico"@en.
+    rdfs:label "tituloPeriodico"@pt-br.
 :issnPeriodico rdfs:domain :Periodico;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "issnPeriodico"@en.
+    rdfs:label "issnPeriodico"@pt-br.
 :estrato rdfs:domain :ClassificacaoQualis;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "estrato"@en.
+    rdfs:label "estrato"@pt-br.
 :quadrienio rdfs:domain :ClassificacaoQualis;
     rdfs:range xsd:int;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "quadrienio"@en.
+    rdfs:label "quadrienio"@pt-br.
 :nomeArea rdfs:domain :AreaAvaliacao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "nomeArea"@en.
+    rdfs:label "nomeArea"@pt-br.
 :codigoArea rdfs:domain :AreaAvaliacao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "codigoArea"@en.
+    rdfs:label "codigoArea"@pt-br.
 :valorFinanciamento rdfs:domain :financiadoPor;
     rdfs:range xsd:float;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "valorFinanciamento"@en.
+    rdfs:label "valorFinanciamento"@pt-br.
 :dataInicioFinanciamento rdfs:domain :financiadoPor;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataInicioFinanciamento"@en.
+    rdfs:label "dataInicioFinanciamento"@pt-br.
 :dataFimFinanciamento rdfs:domain :financiadoPor;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataFimFinanciamento"@en.
+    rdfs:label "dataFimFinanciamento"@pt-br.
 :nomeDocPublico rdfs:domain :DocumentoPublico;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "nomeDocPublico"@en.
+    rdfs:label "nomeDocPublico"@pt-br.
 :numeroDocPublico rdfs:domain :DocumentoPublico;
     rdfs:range xsd:int;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "numeroDocPublico"@en.
+    rdfs:label "numeroDocPublico"@pt-br.
 :anoDocPublico rdfs:domain :DocumentoPublico;
     rdfs:range xsd:int;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "anoDocPublico"@en.
+    rdfs:label "anoDocPublico"@pt-br.
 :valorBolsa rdfs:domain :Bolsa;
     rdfs:range xsd:float;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "valorBolsa"@en.
+    rdfs:label "valorBolsa"@pt-br.
 :dataInicioBolsa rdfs:domain :Bolsa;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataInicioBolsa"@en.
+    rdfs:label "dataInicioBolsa"@pt-br.
 :dataFimBolsa rdfs:domain :Bolsa;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataFimBolsa"@en.
+    rdfs:label "dataFimBolsa"@pt-br.
 :tituloProjeto rdfs:domain :ProjetoDePesquisa;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "tituloProjeto"@en.
+    rdfs:label "tituloProjeto"@pt-br.
 :dataInicioProjeto rdfs:domain :ProjetoDePesquisa;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataInicioProjeto"@en.
+    rdfs:label "dataInicioProjeto"@pt-br.
 :dataFimProjeto rdfs:domain :ProjetoDePesquisa;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataFimProjeto"@en.
+    rdfs:label "dataFimProjeto"@pt-br.
 :dataInicioParticipa rdfs:domain :participaDe;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataInicioParticipa"@en.
+    rdfs:label "dataInicioParticipa"@pt-br.
 :dataFimParticipa rdfs:domain :participaDe;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataFimParticipa"@en.
+    rdfs:label "dataFimParticipa"@pt-br.
 :dataInicioUtiliza rdfs:domain :Utilizacao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataInicioUtiliza"@en.
+    rdfs:label "dataInicioUtiliza"@pt-br.
 :dataFimUtiliza rdfs:domain :Utilizacao;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "dataFimUtiliza"@en.
+    rdfs:label "dataFimUtiliza"@pt-br.
 :nomeInfra rdfs:domain :Infraestrutura;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "nomeInfra"@en.
+    rdfs:label "nomeInfra"@pt-br.
 :salaLaboratorio rdfs:domain :Laboratorio;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "salaLaboratorio"@en.
+    rdfs:label "salaLaboratorio"@pt-br.
 :patrimonioEquipamento rdfs:domain :Equipamento;
     rdfs:range xsd:int;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "patrimonioEquipamento"@en.
+    rdfs:label "patrimonioEquipamento"@pt-br.
 :eixoEstrategico rdfs:domain :MetaInstitucional;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "eixoEstrategico"@en.
+    rdfs:label "eixoEstrategico"@pt-br.
 :descricaoMeta rdfs:domain :MetaInstitucional;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "descricaoMeta"@en.
+    rdfs:label "descricaoMeta"@pt-br.
 :indicador rdfs:domain :MetaInstitucional;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "indicador"@en.
+    rdfs:label "indicador"@pt-br.
 :valorMetaInicial rdfs:domain :MetaInstitucional;
     rdfs:range xsd:float;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "valorMetaInicial"@en.
+    rdfs:label "valorMetaInicial"@pt-br.
 :valorMetaFinal rdfs:domain :MetaInstitucional;
     rdfs:range xsd:float;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "valorMetaFinal"@en.
+    rdfs:label "valorMetaFinal"@pt-br.
 :vigenciaPDI rdfs:domain :MetaInstitucional;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "vigenciaPDI"@en.
+    rdfs:label "vigenciaPDI"@pt-br.
 :areaPrioritaria rdfs:domain :ObjetivoPoliticaPublica;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "areaPrioritaria"@en.
+    rdfs:label "areaPrioritaria"@pt-br.
 :descricaoObjetivo rdfs:domain :ObjetivoPoliticaPublica;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "descricaoObjetivo"@en.
+    rdfs:label "descricaoObjetivo"@pt-br.
 :vigenciaENCTI rdfs:domain :ObjetivoPoliticaPublica;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "vigenciaENCTI"@en.
+    rdfs:label "vigenciaENCTI"@pt-br.
 :numeroODS rdfs:domain :ObjetivoDesenvolvimentoSustentavel;
     rdfs:range xsd:int;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "numeroODS"@en.
+    rdfs:label "numeroODS"@pt-br.
 :tituloODS rdfs:domain :ObjetivoDesenvolvimentoSustentavel;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "tituloODS"@en.
+    rdfs:label "tituloODS"@pt-br.
 :descricaoODS rdfs:domain :ObjetivoDesenvolvimentoSustentavel;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "descricaoODS"@en.
+    rdfs:label "descricaoODS"@pt-br.
 :metaODS rdfs:domain :ObjetivoDesenvolvimentoSustentavel;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "metaODS"@en.
+    rdfs:label "metaODS"@pt-br.
 :tipoAlinhamento rdfs:domain :AlinhamentoMeta;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "tipoAlinhamento"@en.
+    rdfs:label "tipoAlinhamento"@pt-br.
 :justificativaAlinhamento rdfs:domain :AlinhamentoMeta;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "justificativaAlinhamento"@en.
+    rdfs:label "justificativaAlinhamento"@pt-br.
 :evidenciaURL rdfs:domain :AlinhamentoMeta;
     rdfs:range xsd:string;
     rdf:type owl:DatatypeProperty;
     rdfs:subPropertyOf gufo:hasQualityValue;
-    rdfs:label "evidenciaURL"@en.
+    rdfs:label "evidenciaURL"@pt-br.
 :Participacao gufo:isDerivedFrom :participaDe.
 :matriculadoEm gufo:isDerivedFrom :Matricula.
 :credenciadoEm gufo:isDerivedFrom :Credenciamento.
@@ -545,107 +545,107 @@
 :oferece rdf:type owl:ObjectProperty;
     rdfs:domain :ProgramaPosGraduacao;
     rdfs:range :Curso;
-    rdfs:label "oferece"@en;
+    rdfs:label "oferece"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :acolhe rdf:type owl:ObjectProperty;
     rdfs:domain :ProgramaPosGraduacao;
     rdfs:range :ProjetoDePesquisa;
-    rdfs:label "acolhe"@en;
+    rdfs:label "acolhe"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :matriculadoEm rdf:type owl:ObjectProperty;
     rdfs:domain :DiscentePosGraduacao;
     rdfs:range :Curso;
-    rdfs:label "matriculadoEm"@en;
+    rdfs:label "matriculadoEm"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :credenciadoEm rdf:type owl:ObjectProperty;
     rdfs:domain :DocentePosGraduacao;
     rdfs:range :ProgramaPosGraduacao;
-    rdfs:label "credenciadoEm"@en;
+    rdfs:label "credenciadoEm"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :vinculadoA rdf:type owl:ObjectProperty;
     rdfs:domain :DocentePosGraduacao;
     rdfs:range :InstituicaoDeEnsinoSuperior;
-    rdfs:label "vinculadoA"@en;
+    rdfs:label "vinculadoA"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :orientadoPor rdf:type owl:ObjectProperty;
     rdfs:domain :DiscentePosGraduacao;
     rdfs:range :DocentePosGraduacao;
-    rdfs:label "orientadoPor"@en;
+    rdfs:label "orientadoPor"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :pertenceAoPrograma rdf:type owl:ObjectProperty;
     rdfs:domain :AreaDeConcentracao;
     rdfs:range :ProgramaPosGraduacao;
-    rdfs:label "pertenceAoPrograma"@en;
+    rdfs:label "pertenceAoPrograma"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :possuiLinha rdf:type owl:ObjectProperty;
     rdfs:domain :AreaDeConcentracao;
     rdfs:range :LinhaDePesquisa;
-    rdfs:label "possuiLinha"@en;
+    rdfs:label "possuiLinha"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :tituladoEm rdf:type owl:ObjectProperty;
     rdfs:domain :Egresso;
     rdfs:range :Curso;
-    rdfs:label "tituladoEm"@en;
+    rdfs:label "tituladoEm"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :autorDe rdf:type owl:ObjectProperty;
     rdfs:domain :Autor;
     rdfs:range :ProducaoAcademica;
-    rdfs:label "autorDe"@en;
+    rdfs:label "autorDe"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :publicadoEm rdf:type owl:ObjectProperty;
     rdfs:domain :ArtigoDePeriodico;
     rdfs:range :Periodico;
-    rdfs:label "publicadoEm"@en;
+    rdfs:label "publicadoEm"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :classificadoEm rdf:type owl:ObjectProperty;
     rdfs:domain :Periodico;
     rdfs:range :AreaAvaliacao;
-    rdfs:label "classificadoEm"@en;
+    rdfs:label "classificadoEm"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :contextualizadaEmLinha rdf:type owl:ObjectProperty;
     rdfs:domain :ProducaoAcademica;
     rdfs:range :LinhaDePesquisa;
-    rdfs:label "contextualizadaEmLinha"@en;
+    rdfs:label "contextualizadaEmLinha"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :baseadoEm rdf:type owl:ObjectProperty;
     rdfs:domain :financiadoPor;
     rdfs:range :DocumentoPublico;
-    rdfs:label "baseadoEm"@en;
+    rdfs:label "baseadoEm"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :Financiamento rdf:type owl:ObjectProperty;
     rdfs:domain :OrganizacaoFinanciadora;
     rdfs:range :ProjetoDePesquisa;
-    rdfs:label "Financiamento"@en;
+    rdfs:label "Financiamento"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :bolsistaDe rdf:type owl:ObjectProperty;
     rdfs:domain :Bolsista;
     rdfs:range :OrganizacaoFinanciadora;
-    rdfs:label "bolsistaDe"@en;
+    rdfs:label "bolsistaDe"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :Participacao rdf:type owl:ObjectProperty;
     rdfs:domain :ParticipanteProjeto;
     rdfs:range :ProjetoDePesquisa;
-    rdfs:label "Participacao"@en;
+    rdfs:label "Participacao"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :utiliza rdf:type owl:ObjectProperty;
     rdfs:domain :ProjetoDePesquisa;
     rdfs:range :Infraestrutura;
-    rdfs:label "utiliza"@en;
+    rdfs:label "utiliza"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :contribuiPara rdf:type owl:ObjectProperty;
     rdfs:domain :ProjetoDePesquisa;
     rdfs:range :MetaSocioeconomica;
-    rdfs:label "contribuiPara"@en;
+    rdfs:label "contribuiPara"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :vinculadoALinha rdf:type owl:ObjectProperty;
     rdfs:domain :ProjetoDePesquisa;
     rdfs:range :LinhaDePesquisa;
-    rdfs:label "vinculadoALinha"@en;
+    rdfs:label "vinculadoALinha"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :alinhadoCom rdf:type owl:ObjectProperty;
     rdfs:domain :MetaSocioeconomica;
     rdfs:range :DocumentoPublico;
-    rdfs:label "alinhadoCom"@en;
+    rdfs:label "alinhadoCom"@pt-br;
     rdf:type gufo:MaterialRelationshipType.
 :Matricula rdfs:subClassOf [
   rdf:type owl:Restriction;
@@ -841,4 +841,38 @@
   rdf:type owl:Restriction;
   owl:onProperty gufo:mediates;
   owl:someValuesFrom :ParticipanteProjeto
+].
+
+# ---------------------------------------------------------------------------
+# Acrescentado em pos-processamento.
+# As relacoes «historicalDependence» do modelo conceitual sao declaradas aqui
+# como subpropriedades nomeadas de gufo:historicallyDependsOn. O exportador do
+# plugin nao as emite quando a multiplicidade da ponta de origem e ilimitada, e
+# a cardinalidade nao pode ser imposta diretamente sobre
+# gufo:historicallyDependsOn, que nao e propriedade simples.
+# ---------------------------------------------------------------------------
+:produtoDe rdf:type owl:ObjectProperty;
+    rdfs:subPropertyOf gufo:historicallyDependsOn;
+    rdfs:domain :ProducaoAcademica;
+    rdfs:range :ProjetoDePesquisa;
+    rdfs:label "produtoDe"@pt-br.
+
+:ProducaoAcademica rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty :produtoDe;
+  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :ProjetoDePesquisa
+].
+
+:derivadoDe rdf:type owl:ObjectProperty;
+    rdfs:subPropertyOf gufo:historicallyDependsOn;
+    rdfs:domain :ProducaoBibliografica;
+    rdfs:range :TrabalhoConclusaoCurso;
+    rdfs:label "derivadoDe"@pt-br.
+
+:ProducaoBibliografica rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty :derivadoDe;
+  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :TrabalhoConclusaoCurso
 ].
