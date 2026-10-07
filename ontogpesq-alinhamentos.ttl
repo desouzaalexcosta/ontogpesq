@@ -1,0 +1,174 @@
+@prefix :           <https://purl.org/ontogpesq#> .
+@prefix capes:      <http://vocab.capes.gov.br/def/vcav#> .
+@prefix capes-code: <http://vocab.capes.gov.br/def/schema/code#> .
+@prefix capes-area: <http://vocab.capes.gov.br/def/schema/area/> .
+@prefix coar:       <http://purl.org/coar/resource_type/> .
+@prefix vivo:       <http://vivoweb.org/ontology/core#> .
+@prefix bibo:       <http://purl.org/ontology/bibo/> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================================================
+# Correspondências entre a OntoGPesq e vocabulários externos
+#
+# Artefato apartado da ontologia (Capítulo 4, Seção 4.3): a OntoGPesq pode ser
+# consumida sem este arquivo, e sem assumir dependência de vocabulários cuja
+# evolução lhe é externa. Nenhum vocabulário externo é importado ou alterado.
+#
+# Mecanismos (Seção 4.3.1):
+#   - VCAV, onde define classes: owl:equivalentClass ou rdfs:subClassOf;
+#   - VCAV, onde usa vocabulário controlado, e COAR: correspondências SKOS;
+#   - VIVO, BIBO e FOAF: correspondências SKOS, restritas aos termos
+#     exercitados no povoamento (Tabela tbl-impl-conformacao).
+#
+# Termos externos conferidos na fonte em 07/10/2026:
+#   VCAV 1.0.3        https://vocab.capes.gov.br/def/vcav (e area.rdf, code.rdf)
+#   COAR              https://vocabularies.coar-repositories.org/resource_types/
+#   VIVO 1.16.0       vivo.owl da tag vivo-1.16.0 do repositório vivo-project/VIVO
+#   BIBO              bibo.owl do repositório structureddynamics/Bibliographic-Ontology-BIBO
+#   FOAF              foaf:Person, conforme declarado no próprio VCAV e no VIVO
+#
+# As classes da OntoGPesq são também indivíduos nomeados no artefato v11.1
+# (punning), o que torna as correspondências SKOS a partir delas bem formadas
+# em OWL 2 DL (Seção 4.2.1).
+# =============================================================================
+
+<https://purl.org/ontogpesq/alinhamentos>
+    a                owl:Ontology ;
+    owl:imports      <https://purl.org/ontogpesq> ;
+    rdfs:label       "Correspondências da OntoGPesq com vocabulários externos"@pt-br ;
+    rdfs:comment     "Declara as correspondências da OntoGPesq com o Vocabulário da Avaliação da CAPES (VCAV 1.0.3), com o vocabulário de tipos de recurso do COAR e com os termos do VIVO, do BIBO e do FOAF exercitados no povoamento do grafo de validação. Nenhum vocabulário externo é importado."@pt-br ;
+    dcterms:created  "2026-10-07"^^xsd:date ;
+    owl:versionInfo  "1.0, correspondente ao artefato ontogpesq-v11.1-final.ttl" .
+
+# -----------------------------------------------------------------------------
+# Declarações necessárias para o perfil OWL 2 DL
+# -----------------------------------------------------------------------------
+
+skos:exactMatch  a owl:ObjectProperty .
+skos:closeMatch  a owl:ObjectProperty .
+skos:broadMatch  a owl:ObjectProperty .
+skos:narrowMatch a owl:ObjectProperty .
+
+capes:Pessoa              a owl:Class .
+capes:Ies                 a owl:Class .
+capes:Ppg                 a owl:Class .
+capes:Curso               a owl:Class .
+capes:RelComOrg           a owl:Class .
+capes:RelComProjeto       a owl:Class .
+capes:RelComProducao      a owl:Class .
+capes-area:AreaAvaliacao  a owl:Class .
+
+capes-code:papel-discente  a owl:NamedIndividual .
+capes-code:papel-docente   a owl:NamedIndividual .
+capes-code:papel-egresso   a owl:NamedIndividual .
+capes-code:papel-bolsista  a owl:NamedIndividual .
+capes-code:papel-ag-fomento a owl:NamedIndividual .
+
+coar:c_db06 a owl:NamedIndividual .
+coar:c_bdcc a owl:NamedIndividual .
+coar:c_46ec a owl:NamedIndividual .
+
+foaf:Person               a owl:NamedIndividual .
+vivo:FacultyMember        a owl:NamedIndividual .
+vivo:AdvisingRelationship a owl:NamedIndividual .
+vivo:FundingOrganization  a owl:NamedIndividual .
+vivo:Project              a owl:NamedIndividual .
+vivo:Grant                a owl:NamedIndividual .
+bibo:Thesis               a owl:NamedIndividual .
+bibo:AcademicArticle      a owl:NamedIndividual .
+
+# -----------------------------------------------------------------------------
+# 1. VCAV: classes (axiomas OWL)
+# -----------------------------------------------------------------------------
+
+# Entidades elementares da avaliação. As extensões coincidem: pessoa natural,
+# instituição de ensino superior brasileira, programa de pós-graduação
+# brasileiro e curso de pós-graduação stricto sensu oferecido por um programa.
+:Pessoa                       owl:equivalentClass capes:Pessoa .
+:InstituicaoDeEnsinoSuperior  owl:equivalentClass capes:Ies .
+:ProgramaPosGraduacao         owl:equivalentClass capes:Ppg .
+:Curso                        owl:equivalentClass capes:Curso .
+
+# No esquema de áreas do VCAV, AreaAvaliacao é uma classe (subclasse de
+# skos:Concept) cujas instâncias são as áreas de avaliação da CAPES.
+:AreaAvaliacao                owl:equivalentClass capes-area:AreaAvaliacao .
+
+# Relacionamentos reificados. O VCAV adota um relacionamento genérico,
+# qualificado por códigos de papel; a OntoGPesq, relators tipados pela
+# natureza do vínculo. A especialização preserva essa relação.
+:Credenciamento         rdfs:subClassOf capes:RelComOrg .
+:VinculoInstitucional   rdfs:subClassOf capes:RelComOrg .
+:Matricula              rdfs:subClassOf capes:RelComOrg .
+:ParticipacaoEmProjeto  rdfs:subClassOf capes:RelComProjeto .
+:Autoria                rdfs:subClassOf capes:RelComProducao .
+
+# -----------------------------------------------------------------------------
+# 2. VCAV: códigos de papel (SKOS)
+# -----------------------------------------------------------------------------
+
+# Os papéis são valores de vocabulário controlado no VCAV (capes-code:TipoPapel)
+# e classes fundamentadas em UFO na OntoGPesq. Valor e classe são entidades de
+# naturezas distintas; a correspondência registra proximidade, sem identidade.
+:DiscentePosGraduacao     skos:closeMatch capes-code:papel-discente .
+:DocentePosGraduacao      skos:closeMatch capes-code:papel-docente .
+:Egresso                  skos:closeMatch capes-code:papel-egresso .
+:Bolsista                 skos:closeMatch capes-code:papel-bolsista .
+
+# papel-ag-fomento consta do esquema tipopapel (skos:hasTopConcept), mas não
+# tem descrição própria no code.rdf 1.0.3: seus rótulos e sua notação estão no
+# recurso papel-partic-externo, que acumula também os de IES, participante
+# externo e pró-reitor. A correspondência segue o conceito que o esquema
+# destina à agência de fomento (Capítulo 3, nota sobre a Tabela tbl-proposta-vcav).
+:OrganizacaoFinanciadora  skos:closeMatch capes-code:papel-ag-fomento .
+
+# -----------------------------------------------------------------------------
+# 3. COAR: tipos de recurso (SKOS)
+# -----------------------------------------------------------------------------
+
+# Tese de doutorado e dissertação de mestrado: mesma extensão.
+:TeseDoutorado            skos:exactMatch coar:c_db06 .
+:DissertacaoMestrado      skos:exactMatch coar:c_bdcc .
+
+# O conceito COAR de tese inclui o trabalho de conclusão de graduação; o
+# TrabalhoConclusaoCurso da OntoGPesq restringe-se à pós-graduação stricto
+# sensu. O conceito externo é estritamente mais amplo.
+:TrabalhoConclusaoCurso   skos:broadMatch coar:c_46ec .
+
+# -----------------------------------------------------------------------------
+# 4. VIVO, BIBO e FOAF: termos exercitados no povoamento (SKOS)
+# -----------------------------------------------------------------------------
+
+# foaf:Person abrange qualquer pessoa, sem restrição de existência ou de
+# contexto; é estritamente mais amplo.
+:Pessoa                   skos:broadMatch foaf:Person .
+
+# vivo:FacultyMember abrange todo docente com vínculo a uma instituição de
+# ensino superior, sem restrição à pós-graduação. No VIVO é subclasse de
+# foaf:Person; na OntoGPesq, DocentePosGraduacao é «role».
+:DocentePosGraduacao      skos:broadMatch vivo:FacultyMember .
+
+# vivo:AdvisingRelationship abrange orientação e mentoria de qualquer nível.
+:Orientacao               skos:broadMatch vivo:AdvisingRelationship .
+
+# vivo:Project abrange qualquer empreendimento com finalidade definida. No VIVO
+# é subclasse de processo da BFO; na OntoGPesq, ProjetoDePesquisa é «kind».
+:ProjetoDePesquisa        skos:broadMatch vivo:Project .
+
+# vivo:Grant é o mecanismo de concessão de recursos para um projeto ou
+# atividade; corresponde ao relator Financiamento sem coincidência integral.
+:Financiamento            skos:closeMatch vivo:Grant .
+
+# vivo:FundingOrganization é tipo de organização no VIVO; na OntoGPesq,
+# OrganizacaoFinanciadora é papel de Organizacao.
+:OrganizacaoFinanciadora  skos:closeMatch vivo:FundingOrganization .
+
+# bibo:Thesis abrange trabalhos de conclusão de qualquer grau acadêmico.
+:TrabalhoConclusaoCurso   skos:broadMatch bibo:Thesis .
+
+# bibo:AcademicArticle: artigo acadêmico, tipicamente publicado em periódico.
+:ArtigoDePeriodico        skos:closeMatch bibo:AcademicArticle .
